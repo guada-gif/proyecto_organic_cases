@@ -1,0 +1,57 @@
+<!-- ======= Haz tu pedido Section ======= -->
+<section id="book-a-table" class="book-a-table">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>¡Haz tú <span>pedido!</span></h2>
+            <p>1.-Ingresa los datos que te indican los campos.</p>
+            <p>2.-Indica la carcasa con el codigo correlativo de modelo y la gama que corresponda tu celular.</p>
+            <p>3.-El correo sera respondido a la brevedad enviando datos de deposito y/o transferencia.</p>
+            <p>4.-Solo debes enviar tu comprobante al Correo de Organic Cases para una mejor atencion.</p>
+            <p>5.-En caso que necesites distribución por mayor te enviarmeos un catalogo especializado.</p>
+
+
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+            <div class="form-row">
+                <div class="col-lg-4 col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" placeholder="Tu Nombre" data-rule="minlen:4" data-msg="Por favor ingresa al menos 4 caracteres">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Tu Email" data-rule="email" data-msg="Por favor ingresa un Email valido">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Tu Celular" data-rule="minlen:9" data-msg="Por favor ingresa al menos 9 numeros">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                    <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Por favor ingresa una fecha valida">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                    <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Por favor ingresa una hora valida">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group">
+                    <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Por favor indica la cantidad de personas">
+                    <div class="validate"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"></textarea>
+                <div class="validate"></div>
+            </div>
+            <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Enviar pedido</button></div>
+        </form>
+
+    </div>
+</section>
+<!-- End Book A Table Section -->
