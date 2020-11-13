@@ -1,0 +1,449 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Organic Cases - {% block title %} Title {% endblock %}</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'img/favicon.png' %}" rel="icon">
+    <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i/Satisfy/Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/index.css' %}" rel="stylesheet"> {% block head %} {% endblock %}
+    <!-- =======================================================
+  * Template Name: Delicious - v2.1.0
+  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top topbar-transparent">
+        <div class="container text-right">
+            <i class="icofont-phone"></i> +569-41852968
+            <!--Numero de contacto -->
+            <i class="icofont-clock-time icofont-rotate-180"></i> Lun-San: 11:00 AM - 23:00 PM
+            <!-- Horarios Disponibles -->
+        </div>
+    </section>
+
+    <!-- ======= Header ======= -->
+    {% block header %}
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container d-flex align-items-center">
+
+            <div class="logo mr-auto">
+                <h1 class="text-light"><a href="index.html"><span>Organic Cases</span></a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
+
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="Inicio">Inicio</a></li>
+                    <li><a href="Acerca_de">Acerca de</a></li>
+                    <li><a href="Menu">Menu</a></li>
+                    <li><a href="Materiales">Materiales</a></li>
+                    <!-- Materiales-->
+                    <li><a href="Reciclaje">Reciclaje</a></li>
+                    <!-- Materias primas-->
+                    <!-- <li><a href="#chefs">Colaboradores</a></li> <!-Trayectoria-->
+                    <li><a href="Galeria">Galeria</a></li>
+                    <!-- Fotos de carcasas-->
+                    <li><a href="Contacto">Contacto</a></li>
+                    <!-- Medios de contactos-->
+
+                    <li class="book-a-table text-center"><a href="#book-a-table">¡Haz tu pedido!</a></li>
+                </ul>
+            </nav>
+            <!-- .nav-menu -->
+
+        </div>
+
+    </header>
+    {% endblock %}
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+        <div class="hero-container">
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+                <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+                <div class="carousel-inner" role="listbox">
+                    {% block carrusel %}
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active" style="background: url(assets/img/slide/sustentable.png);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown"><span>Organic Cases</span> Carcasas sustentable</h2>
+                                <p class="animate__animated animate__fadeInUp">Una tienda con carcasa para celulares actuales que utilizan como materias primas materiales sustentables.</p>
+                                <div>
+                                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Carcasas</a>
+                                    <!-- Nombre boton de inicio -->
+                                    <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">¡Haz tu pedido!</a>
+                                    <!-- Nombre boton de inicio -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endblock %}
+
+                    <!-- Slide 2 -->
+                    {% block carrusel %}
+                    <div class="carousel-item" style="background: url(../../../static/img/slide/sustentable2.jpeg);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown">Sustentabilidad</h2>
+                                <p class="animate__animated animate__fadeInUp">Consiste en dar respuesta a las necesidades básicas, ofrecer una mejor calidad de vida, minimizando el uso de los recursos naturales y emisiones y sin comprometer las necesidades de las generaciones futuras.</p>
+                                <div>
+                                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Carcasas</a>
+                                    <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">¡Haz tu pedido!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endblock %} {% block carrusel %}
+                    <!-- Slide 3 -->
+                    <div class="carousel-item" style="background: url(../../../static/img/slide/sustentable3.jpg);">
+                        <div class="carousel-background"><img src="{% static 'img/slide/sustentable3.jpg' %}" alt=""></div>
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown">Reciclaje</h2>
+                                <p class="animate__animated animate__fadeInUp">El reciclaje es un proceso cuyo objetivo es convertir residuos en nuevos productos o en materia prima para su posterior utilización.</p>
+                                <div>
+                                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Carcasas</a>
+                                    <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">¡Haz tu pedido!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                {% endblock %}
+            </div>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+
+
+        <!-- ======= Colaboradores Section ======= -->
+        <section id="chefs" class="chefs">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Colaboradores <span>Cases</span></h2>
+                    <p> Cada colaborador aporta en experiencia en el reciclaje de residuos sólidos, siendo dirigentes local (Asociación de Recicladores de La Serena), nacional (Movimiento Nacional de Recicladores de Chile) e internacional (Red Latinoamericana
+                        y de El Caribe de Recicladores, Red LACRE).</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="member">
+                            <div class="pic"><img src="{% static 'img/colaboradores/Alvaro.jpg' %}" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Álvaro Alaniz Araya</h4>
+                                <span>Antropología Social de la Universidad de Chile</span>
+                                <div class="social">
+                                    <a href=""><i class="icofont-twitter"></i></a>
+                                    <a href=""><i class="icofont-facebook"></i></a>
+                                    <a href=""><i class="icofont-instagram"></i></a>
+                                    <a href=""><i class="icofont-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="member">
+                            <div class="pic"><img src="{% static 'img/Colaboradores/Alejandra.jpg' %}" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Alejandra Silberman</h4>
+                                <span>BA en Estudios del Medio Ambiente</span>
+                                <div class="social">
+                                    <a href=""><i class="icofont-twitter"></i></a>
+                                    <a href=""><i class="icofont-facebook"></i></a>
+                                    <a href=""><i class="icofont-instagram"></i></a>
+                                    <a href=""><i class="icofont-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="member">
+                            <div class="pic"><img src="{% static 'img/Colaboradores/Exequiel.jpg' %}" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Exequiel Estay</h4>
+                                <span>Reciclador de base</span>
+                                <div class="social">
+                                    <a href=""><i class="icofont-twitter"></i></a>
+                                    <a href=""><i class="icofont-facebook"></i></a>
+                                    <a href=""><i class="icofont-instagram"></i></a>
+                                    <a href=""><i class="icofont-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- Colaboradores Section -->
+
+        <!-- ======= Testimonials Section ======= -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+
+                <div class="owl-carousel testimonials-carousel">
+
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+                        <h3>Juan Uribe</h3>
+                        <h4>Cliente</h4>
+                        <div class="stars">
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                        </div>
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i> Excelente producto, me encanto 100% recomendado.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                        <h3>Catalina Li Jimenez</h3>
+                        <h4>Cliente</h4>
+                        <div class="stars">
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                        </div>
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i> Me encantaron sus modelos de carcasas son buenos,bonitos, baratos y los mas importante saludables a la naturaleza.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+                        <h3>Jeannette Barra</h3>
+                        <h4>Cliente</h4>
+                        <div class="stars">
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                        </div>
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i> Me parecio una idea innovadora que sean materiales reciclados, asi perduramos la sustentabilidad del planeta, 100% recomendado.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+                        <h3>Brandon Gonzales</h3>
+                        <h4>Cliente</h4>
+                        <div class="stars">
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                        </div>
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i> Bonitos modelos, ecologicos, precio razonable, las 3B
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                    </div>
+
+                    <div class="testimonial-item">
+                        <img src="{% static 'img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+                        <h3>Johnathan Encina</h3>
+                        <h4>Cliente</h4>
+                        <div class="stars">
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                            <i class="icofont-star"></i>
+                        </div>
+                        <p>
+                            <i class="bx bxs-quote-alt-left quote-icon-left"></i> Buen producto, solo falta mas diversidad de telefonos asociados, pero es buen producto.
+                            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Testimonials Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2><span>Contactos</span></h2>
+                    <p>Contactate con nuestros servidores.</p>
+                </div>
+            </div>
+
+            <div class="map">
+                <object type="text/html" data="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13316.309424872641!2d-70.6576547!3d-33.4472911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcfac72a68dd4b986!2sDuoc%20UC%20-%20Sede%20Padre%20Alonso%20de%20Ovalle!5e0!3m2!1ses-419!2scl!4v1600660027083!5m2!1ses-419!2scl"
+                    width="1500" height="450"></object>
+            </div>
+
+            <div class="container mt-5">
+
+                <div class="info-wrap">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 info">
+                            <i class="icofont-google-map"></i>
+                            <h4>Ubicación:</h4>
+                            <p> Padre Alonso de Ovalle 1586, Santiago, Región Metropolitana</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                            <i class="icofont-clock-time icofont-rotate-90"></i>
+                            <h4>Horarios:</h4>
+                            <p>Lunes-Sábados:<br>11:00 AM - 23:00 PM</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                            <i class="icofont-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>Organic.Case.Web@gmail.com<br>Organic.Case.Web@gmail.com</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                            <i class="icofont-phone"></i>
+                            <h4>Teléfono:</h4>
+                            <p>+569-41852968<br>+562-22441019</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="form-row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" data-rule="minlen:4" data-msg="Por favor ingresa al menos 4 caracteres" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" data-rule="email" data-msg="Por favor ingresa un Email valido" />
+                            <div class="validate"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor ingresa al menos 4 caracteres" />
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor ingresa algo sobre nosotros" placeholder="Mensaje"></textarea>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Tu mensaje ha sido enviado, Gracias!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+                </form>
+
+            </div>
+        </section>
+        <!-- End Contact Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <h3>Organic Cases
+            </h3>
+            <p>Para más información acerca de Organic Cases puedes seguirnos en reades sociales.</p>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>Organic Cases</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+                Organic Cases by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'vendor/jquery-sticky/jquery.sticky.js' %}"></script>
+    <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+    <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

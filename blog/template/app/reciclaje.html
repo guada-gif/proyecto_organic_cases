@@ -1,3 +1,4 @@
+{% extends './base/base.html' %} {% load staticfiles %} {% block title %} Galeria {% endblock %} {% block content %}
 <!-- ======= Reciclaje Section ======= -->
 <section id="events" class="events">
     <div class="container">
@@ -10,7 +11,7 @@
 
             <div class="row event-item">
                 <div class="col-lg-6">
-                    <img src="../../../static/img/panorama1.jpeg" class="img-fluid" alt="">
+                    <img src="{% static 'img/panorama1.jpeg' %}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                     <h3>Panorama actual en Chile</h3>
@@ -28,7 +29,7 @@
 
             <div class="row event-item">
                 <div class="col-lg-6">
-                    <img src="../../../static/img/puntoverde1.jpeg" class="img-fluid" alt="">
+                    <img src="{% static 'img/puntoverde1.jpeg' %}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                     <h3>Puntos verdes</h3>
@@ -39,15 +40,15 @@
                         ¿Qué son los Punto Verde?
                     </p>
                     <ul>
-                        <li><i class="icofont-check-circled"></i> Es uno o más contenedores fijos o móviles, ubicados en lugares de uso o acceso público destinados a recibir residuos específicos entregados por la población, para su almacenamiento
-                            y envío a instalaciones de valorización o eliminación.</li>
+                        <li><i class="icofont-check-circled"></i> Es uno o más contenedores fijos o móviles, ubicados en lugares de uso o acceso público destinados a recibir residuos específicos entregados por la población, para su almacenamiento y envío
+                            a instalaciones de valorización o eliminación.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="row event-item">
                 <div class="col-lg-6">
-                    <img src="../../../static/img/puntolimpio1.jpeg" class="img-fluid" alt="">
+                    <img src="{% static 'img/puntolimpio1.jpeg' %}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                     <h3>Puntos Limpios</h3>
@@ -71,4 +72,5 @@
 
     </div>
 </section>
+{% endblock %}
 <!-- End Reciclaje Section -->

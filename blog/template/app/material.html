@@ -1,0 +1,107 @@
+{% extends './base/base.html' %} {% load staticfiles %} {% block title %} Galeria {% endblock %} {% block content %}
+<!-- ======= Materiales Section ======= -->
+<section id="specials" class="specials">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Materiales <span>Sustentables</span></h2>
+            <p>La idea de cuidar el medioambiente ha calado de manera profunda en la mente de las personas. Lo anterior, se ve reflejado en los nuevos proyectos de construcción, la forma de utilizar los recursos, y la integración de materiales sustentables.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3">
+                <ul class="nav nav-tabs flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active show" data-toggle="tab" href="#tab-1">Bambú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-2">Madera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-3">Cobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-4">Plástico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-5">Pinturas ecológicas </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-9 mt-4 mt-lg-0">
+                <div class="tab-content">
+                    <div class="tab-pane active show" id="tab-1">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Bambú</h3>
+                                <p class="font-italic">Aunque su uso se ha popularizado con los años, en la cultura asiática ya se había aprovechado desde hace mucho. Sus propiedades físicas lo convierten en uno de los materiales sustentables ideales para distintas obras, por
+                                    ejemplo, puede reemplazar a las vigas de refuerzo.</p>
+
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2">
+                                <img src="{% static 'img/bambu1.png' %}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-2">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Madera</h3>
+                                <p class="font-italic">Es quizás uno de los recursos más utilizado en las construcciones debido a que posee muchísimas ventajas en sus propiedades. Entre ellas, es de fácil manejo, buena calidad y resistencia, por lo que puede ser utilizado en
+                                    techos y revestimientos.</p>
+
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2">
+                                <img src="{% static 'img/madera1.png' %}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-3">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Cobre</h3>
+                                <p class="font-italic">es otro material sustentable, por ejemplo no es nocivo para la salud es un material 100% reciclable, un muy buen conductor de energía eléctrica, y se utiliza como material prima para casi todas las ciencias inclusive la
+                                    Tecnológica. El cobre y sus aleaciones , se utiliza para el intercambio de energía térmica en muchísimas aplicaciones.</p>
+
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2">
+                                <img src="{% static 'img/cobre1.png' %}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-4">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Plastico</h3>
+                                <p class="font-italic">El uso de plástico reciclado en la construcción ha tomado gran importancia, es un material de fácil manejo y de instalación rápida, ayuda reducir la huella de carbono y la energía generada para producir otros materiales.
+                                    Actualmente se utiliza en diversos ejemplos, moldear tejas para techos de viviendas y cercas, producir baldosas, ventanas de pvc y aislamientos en interiores. Estructuralmente, el concreto mezclado con plástico reciclado
+                                    logra un material 15% más resistente que el concreto tradicional, los ladrillos funcionan de forma similar que los bloques de LEGO haciendo que los tiempos de construcción sean más rápidos y eficientes.</p>
+
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2">
+                                <img src="{% static 'img/plastico1.jpeg' %}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-5">
+                        <div class="row">
+                            <div class="col-lg-8 details order-2 order-lg-1">
+                                <h3>Pinturas ecológicas </h3>
+                                <p class="font-italic">Se realizan con pigmentos naturales que se extraen de cortezas, plantas, minerales y cera de abeja, eliminando los compuestos sintéticos y nocivos de las pinturas tradicionales. Son biodegradables, no se cargan con electro
+                                    estática y son fáciles de renovar. La gama de colores es amplia, en el caso de los pigmentos minerales, se utilizan óxido de hierro, carbono, zinc, cobre o arcilla. Los tonos vegetales provienen del añil, carmín de
+                                    alizarina, cochinilla, purpura de tiro entre otros.</p>
+
+                            </div>
+                            <div class="col-lg-4 text-center order-1 order-lg-2">
+                                <img src="{% static 'img/pintura1.jpg' %}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
+<!-- End Materiales Section -->

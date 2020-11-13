@@ -18,11 +18,19 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('blog.urls')),
-    path('index',include('blog.urls')),
-    path('agregar_cliente', include('blog.urls')),
-    path('listar_clientes', include('blog.urls')),
-    path('editar_cliente/<int:cliente_id>', include('blog.urls')),
-    path('borrar_cliente/<int:cliente_id>', include('blog.urls')),
+    path('', include('app.urls')),
+    path('index',include('app.urls')),
+    path('agregar_cliente', include('app.urls')),
+    path('listar_clientes', include('app.urls')),
+    path('editar_cliente/<int:cliente_id>', include('app.urls')),
+    path('borrar_cliente/<int:cliente_id>', include('app.urls')),
+    path('menu', include('app.urls')),
+
+    path('login', include('app.urls')),
+    path('material', include('app.urls')),
+    path('reciclaje',include('app.urls')),
+    path('galeria',include('app.urls')),
+    path('Acerca_de',include('app.urls')),
+    path('contacto',include('app.urls')),
 ]
 
